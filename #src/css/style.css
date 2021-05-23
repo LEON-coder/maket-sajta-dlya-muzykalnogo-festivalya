@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Lato"), /* Если не получилось, загрузит woff2 */
+    url("../fonts/Lato-Regular.woff2") format("woff2"), /* Если браузер не поддерживает woff2, загрузит woff */
+    url("../fonts/Lato-Regular.woff") format("woff");
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas: "a a a a a a a a a a" "b b b b b b b b b b" "c c c c c c c c c c" "d d d d d d d d d d" "e e e e e e e e e e" "f f f f f f f f f f";
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 980px;
+    background-image: url('../img/header_back.jpg');
+    grid-area: a;
+}
+
+.header__navi-block {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-left: 405px;
+}
+
+.header__navi {
+    display: flex;
+    grid-template-columns: 4fr;
+    width: 560px;
+    height: 37px;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.header__link {
+    font-size: 18px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    z-index: 130;
+}
+
+.header__social-block {
+    margin-left: 390px;
+}
+
+.header__link_social {
+    margin-right: 23px;
+}
+
+.header__link_social:last-child {
+     margin-right: 0;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "maket-sajta-dlya-muzykalnogo-festivalya",
+  "version": "1.0.0",
+  "description": "build gulp",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0"
+  },
+  "dependencies": {
+    "gulp-sass": "^4.1.0"
+  }
+}
